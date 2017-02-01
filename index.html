@@ -159,8 +159,8 @@
 			<div class="container">
 				<div class="col-md-6 col-md-push-6 jumboText">
 					<h1>Golfia vapusta pikkujouluihin</h1>
-					<h2>Suomen mukavin kenttä, <br>Suomen hauskimmat pelikaverit</h2>
-					<a class="btn btn-lg btn-success actionBtn" href="#"><i class="fa fa-thumbs-up fa-4x pull-left"></i><span class="line1">Alkeiskurssit alkavat</span><br/><span class="line2">16.5.</span></a>
+					<h2>Suomen mukavin kenttä, <br>Europan parhaat pelikaverit</h2>
+					<a class="btn btn-lg btn-success actionBtn" href="#"><i class="fa fa-thumbs-up fa-4x pull-left"></i><span class="line1">Alkeiskurssit alkavat</span><br/><span class="line2">16.5. klo 18</span></a>
 				</div>
 				<div class="col-md-6 col-md-pull-6 hidden-xs">
 					<div class="mobile">
@@ -463,6 +463,16 @@
 							<h3>...ja vielä se sosiaalinen puoli!</h3>
 							<p> Golf on erinomainen koko perheen harrastus. Pelin seurallinen luonne tuo pelaajalle henkistä ja sosiaalista pääomaa, jota monipuolinen ja lämminhenkinen seuratoiminta vielä voi kartuttaa. Meillä ei sinun tarvitse pelata yksin!</p>
 						</div>
+						<div class="col-xs-2 icon">
+							<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-euro fa-stack-1x fa-inverse"></i>
+							</span>
+						</div>
+						<div class="col-xs-10">
+							<h3>...mutta golfhan on kallista?</h3>
+							<p>No eikä ole! Höpön-löpön. Se mitään kallista ole. Tai saattaahan se köyhästä tuntua kalliilta.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -722,6 +732,8 @@ $(document).ready(function() {
 		animation: "slide",
 		directionNav: false
 	});
+	
+
 		
 	$('a[href*=#]:not([href=#])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
@@ -745,6 +757,12 @@ $(document).ready(function() {
 			}
 
 		}
+	});
+	
+	$('.clients_content').slick({
+    dots: false,
+    prevArrow: false,
+    nextArrow: false
 	});
 	
 	$('#toTop').click(function() {
