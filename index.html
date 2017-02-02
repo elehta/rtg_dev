@@ -22,7 +22,7 @@
 	    <!-- Elastic grid css file -->
     <link rel="stylesheet" href="css/elastic_grid.css"> 
 			
-			<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 			<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
 			<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 			<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,400,700" rel="stylesheet">
@@ -90,8 +90,9 @@
 							<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jäsenet <span class="caret"></span></a>
 							  <ul class="dropdown-menu">
-								<li><a href="#">Ajanvaraus <img src="assets/ico/extlink.png"></a></li>
-								<li><a href="#">Kilpailut <img src="assets/ico/extlink.png"></a></li>
+								<!-- <img src="assets/ico/extlink.png"> -->
+								<li><a href="#">Ajanvaraus <i class="fa fa-external-link"></i></a></li>
+								<li><a href="#">Kilpailut <i class="fa fa-external-link"></i></a></li>
 								<li><a href="#">Golfnaiset</a></li>
 								<li><a href="#">Golfseniorit</a></li>
 								<li><a href="#">Juniorit</a></li>
@@ -106,7 +107,7 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vieraat <span class="caret"></span></a>
 							  <ul class="dropdown-menu">
 								<li><a href="#">Hinnasto</a></li>
-								<li><a href="#">Kilpailut <img src="assets/ico/extlink.png"></a></li>
+								<li><a href="#">Kilpailut  <i class="fa fa-external-link"></i></a></li>
 								<li><a href="#">Ajo-ohjeet</a></li>
 							  </ul>
 							</li>
@@ -165,11 +166,87 @@
 					<div class="mobile">
 						<div class="mobileSlider">
 							<ul class="slides">
-								<li>
-									<img src="assets/img/screen1.jpg"/>
+								<li>							
+									<div class="card">	  
+										  <div class="card_content">
+											<h4>Green Fee</h4>
+											<p>
+											 <table>
+													  <tr>
+														<td style="width:80%">Arkisin</td>
+														<td style="width:20%"><b>38€</b></td>
+													  </tr>
+													  <tr>
+														<td style="width:80%">Viikonloppuisin</td>
+														<td style="width:20%"><b>43€</b></td>
+													  </tr>
+													  </table>
+													  <hr class="styled">
+													  <p>
+														Osakkeen omistajan vieraana samassa lähdössä:
+													  </p>
+													  <table>
+													  <tr>
+														<td style="width:80%">Arkisin</td>
+														<td style="width:20%"><b>28€</b></td>
+													  </tr>
+													  <tr>
+														<td style="width:80%">Viikonloppuisin</td>
+														<td style="width:20%"><b>33€</b></td>
+													  </tr>
+													</table>
+													  <hr class="styled">
+													<table>
+													  <tr>
+														<td style="width:80%">Juniorin greenfee</td>
+														<td style="width:20%"><b>18€</b></td>
+													  </tr>
+													  <tr>
+														<td style="width:80%">Talvigreeneille</td>
+														<td style="width:20%"><b>20€</b></td>
+													  </tr>
+													  
+											</table> 
+
+												<div class="tinybox">
+												<h5>ajanvaraus</h5>
+												<p>												
+												<b><i class="fa fa-phone"></i> 044 971 1156 / cm@rtg.fi</b><br>
+												<a href="http://www.nexgolf.fi/rtg/">Jäsenten ajanvaraus <i class="fa fa-external-link-square"></i></a></<br>
+												<a href="http://rtg.nexgolf.fi/rtg/tournaments.nxg">Kilpailukalenteri <i class="fa fa-external-link-square"></i></a>
+												</p>
+												</div>	
+										  </div>
+									</div>
+
+
 								</li>
 								<li>
-									<img src="assets/img/screen3.png"/>
+									<div id="orange" class="card">	  
+										  <div class="card_content">
+											<h4>Suomen edullisin liittymispaketti!</h4>
+											<p>
+											Kun aloitat pelaamisen meillä, saat liittymispaketin hintaan <b>500€</b>. Paketti sisältää
+											green card -kurssin sekä ensimmäisen vuoden jäsenmaksun ja pelioikeuden, jolloin voit
+											pelata niin paljon kuin haluat!
+											</p>
+											<img src="assets/img/pix.png"/>
+										  </div>
+									</div>
+								
+								</li>
+								
+								<li>
+									<div id="green" class="card">	  
+										  <div class="card_content">
+											<h4>Aleksis Kivi: Seitsemän veljestä</h4>
+											<p>
+											Jukolan talo, eteläisessä Hämeessä, seisoo erään mäen pohjoisella rinteellä, liki Toukolan kylää. Sen läheisin ym­päristö on kivinen tanner, mutta alempana alkaa pellot, joissa, ennenkuin talo oli häviöön mennyt, aaltoili teräinen vilja.
+											</p>
+											<img src="assets/img/pix.png"/>
+										  </div>
+									</div>									
+									
 								</li>
 							</ul>
 						</div>
@@ -220,7 +297,7 @@
           <div class="col-lg-12 col-md-12">
             <!-- START BLOG HEADING -->
             <div class="heading">
-              <h2 class="sectionTitle">Ajankohtaiset</h2>
+              <h2 class="sectionTitle">Ajankohtaista</h2>
             <!--  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>--> 
             </div>
           </div>
@@ -634,7 +711,8 @@ $(document).ready(function() {
 
 	$('.mobileSlider').flexslider({
 		animation: "slide",
-		slideshowSpeed: 5000,
+		slideshowSpeed: 8000,
+		animationSpeed: 1500,
 		controlNav: false,
 		directionNav: true,
 		prevText: "&#171;",

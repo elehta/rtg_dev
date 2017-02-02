@@ -52,6 +52,15 @@ h3.sectionTitle {
 
 }
 
+hr.styled {
+	width: 50%;
+	margin: 0 auto 0;
+	border-top: dashed 1px; 
+	color: #333;
+	text-align:center; 
+
+}
+
 /**********************************************************************/
 /***************************** NAVBAR ********************************/
 /********************************************************************/
@@ -216,16 +225,17 @@ h3.sectionTitle {
 	background-size: cover;
 	padding-bottom: 0;
     padding-top: 140px;
+	padding-bottom: 70px;
 	color: #fff;
 	margin-bottom: 0;
-		opacity: 0.85;
+	opacity: 0.85;
 }
 .jumbotron .mobile {
-	background-image: url("../assets/img/mobile.png");
+	background-image: none;
     background-repeat: no-repeat;
     height: 450px;
-    margin-left: -96px;
-    margin-top: 0;
+    margin-left: -210px;
+    margin-top: -47px;
     overflow: hidden;
     width: auto;
 }
@@ -245,7 +255,7 @@ h3.sectionTitle {
 	display: inline-block;
     font-size: 14px;
     font-weight: 400;
-    width: 140px;
+    width: 160px;
 	margin-top: 10px;
 }
 .jumbotron .actionBtn .line2 {
@@ -253,6 +263,100 @@ h3.sectionTitle {
     font-weight: 700;
 	line-height: 1;
 	
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.4);
+	border-radius: 6px; /* 6px rounded corners */
+    transition: 0.3s;
+	height: 350px;
+	margin: 5px;
+	background-color: #fff;
+	background: url(../assets/img/backdrop1.png) no-repeat top center scroll #fff;
+	background-position: 0% -10%;
+	background-size: contain;
+}
+
+#green {
+	background-color: #fff;
+	background: url(../assets/img/backdrop3.png) no-repeat top center scroll #fff;
+	background-position: 0% -2%;
+	background-size: contain;
+}
+
+#orange {
+    background-color: #fff;
+	background: url(../assets/img/backdrop2_full.png) no-repeat scroll #fff;
+	background-position: 50% 180%;
+	background-size: cover;
+}
+
+.card  img {
+    border-radius: 6px 6px 0 0;
+	width: 100%;
+	overflow: hidden;
+}
+.card  .tinybox {
+    border-radius: 4px;
+	border-style: solid;
+	border-color: #0489B1;
+	border-width: 1px;
+	padding: 0 5px;
+	background: url(../assets/img/backdrop1.png) no-repeat top right scroll #fff;
+	background-size: cover;
+	width: 100%;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.card  .tinybox  h5{
+	color: #0489B1;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+.card h4 {
+	color: #222;
+	font-weight: 700;
+	padding-top: 0px;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.card p {
+	padding-top: 0px;
+	color: #222;
+	font-size: 15px;
+	font-weight: 400;
+	margin: 5px 0 5px 0;
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+	line-height: 1.3;
+}
+
+.card table {
+	width: 100%;
+	padding-top: 0px;
+	color: #222;
+	font-size: 15px;
+	font-weight: 400;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+/* Add some padding inside the card container */
+.card_content {
+    padding: 2px 12px;
 }
 
 /**********************************************************************/
