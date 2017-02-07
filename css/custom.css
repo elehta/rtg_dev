@@ -186,6 +186,7 @@ hr.styled {
     text-shadow: none;
 
 }
+
 .navbar-inverse.smaller {
 	background: #fff;
 		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
@@ -224,7 +225,7 @@ hr.styled {
 	-o-background-size: cover;
 	background-size: cover;
 	padding-bottom: 0;
-    padding-top: 140px;
+    padding-top: 125px;
 	padding-bottom: 70px;
 	color: #fff;
 	margin-bottom: 0;
@@ -233,7 +234,8 @@ hr.styled {
 .jumbotron .mobile {
 	background-image: none;
     background-repeat: no-repeat;
-    height: 450px;
+    height: 470px;
+	width: 240px;
     margin-left: -210px;
     margin-top: -47px;
     overflow: hidden;
@@ -270,7 +272,7 @@ hr.styled {
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.4);
 	border-radius: 6px; /* 6px rounded corners */
     transition: 0.3s;
-	height: 350px;
+	height: 370px;
 	margin: 5px;
 	background-color: #fff;
 	background: url(../assets/img/backdrop1.png) no-repeat top center scroll #fff;
@@ -509,7 +511,7 @@ hr.styled {
   color: #fff;
   height: 30px;
   left: 92%;
-  right: 0;
+    right: 0;
   top: -38px;
   border-radius: 0px;
   padding: 5px 10px;
@@ -815,6 +817,9 @@ footer .social a .fa-inverse {
     -o-transition: all 0.3s;
     transition: all 0.3s; 
 	}
+		#blogWrap .blog_slider .slick-prev {
+    left: 90	%;
+	}
 }
 @media(max-width:979px){
 	.navbar-collapse {
@@ -838,7 +843,6 @@ footer .social a .fa-inverse {
 	}
 	.navbar-nav {
 		float: right;
-		background-color: #fff;
 		width: 100%;
 	}
 
@@ -874,11 +878,16 @@ footer .social a .fa-inverse {
     -o-transition: all 0.3s;
     transition: all 0.3s; 
 	}
-
+	#blogWrap .blog_slider .slick-prev {
+    left: 85%;
+	}
 }
 @media (max-width: 767px) {
 	.navbar-collapse {
 		float: none;
+	}
+	.navbar-nav {
+		background-color: #fff;
 	}
 	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
 		float: left;
@@ -908,6 +917,9 @@ footer .social a .fa-inverse {
 	#pricingWrap .priceTable {
 		margin-bottom: 60px;
 	}
+		#blogWrap .blog_slider .slick-prev {
+    left: 80%;
+	}
 
 }
 
@@ -920,13 +932,15 @@ footer .social a .fa-inverse {
 		width: auto;	
 	}
 
-
-	
 	
 	h2.sectionTitle {
     font-size: 24px;
     margin-bottom: 40px;
 	border-bottom: 8px solid #2da2c8;
-}
+	}
+	
+	#blogWrap .blog_slider .slick-prev {
+    left: 75%;
+	}
 }
 
