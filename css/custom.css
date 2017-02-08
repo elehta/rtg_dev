@@ -779,7 +779,7 @@ footer .social a .fa-inverse {
 	width: 30px;
 	}
 	
-		.navbar-nav img{
+	.navbar-nav img{
 	height: 0px;
 	width: 0px;
 	}
@@ -790,6 +790,9 @@ footer .social a .fa-inverse {
 		float: left;
 		margin: 15px 0;
 		width: auto;	
+	}
+	.navbar-inverse .navbar-brand .fa-stack {
+		width: 1.2em;
 	}
 	.navbar-header.smaller img{
 	 margin-left: 0px;
@@ -817,7 +820,7 @@ footer .social a .fa-inverse {
     -o-transition: all 0.3s;
     transition: all 0.3s; 
 	}
-		#blogWrap .blog_slider .slick-prev {
+	#blogWrap .blog_slider .slick-prev {
     left: 90	%;
 	}
 }
@@ -840,10 +843,12 @@ footer .social a .fa-inverse {
 
 	.navbar-inverse .navbar-brand .fa-stack {
 		font-size: 22px;
+		width: 1.8em;
 	}
 	.navbar-nav {
 		float: right;
 		width: 100%;
+		margin: 4px 0 0 0;
 	}
 
 	.jumbotron {
@@ -860,6 +865,7 @@ footer .social a .fa-inverse {
 	}
 	.jumbotron .mobile {
 		margin-left: -48px;
+		margin: -50px auto; 
 	}
 	#productWrap .imgWrap img {
 		margin: 0 auto 60px;
@@ -867,9 +873,14 @@ footer .social a .fa-inverse {
 	#contactWrap .blurb {
 		font-size: 20px;
 	}
+	.navbar-header.smaller {
+	 margin-top: -15px;
+	 height: 22px;
+		
+	}
 	.navbar-header.smaller img{
 	 margin-left: 0px;
-	 margin-top: -10px;
+	 margin-top: 2px;
 	 width: 30px; 
      height: 64px;
 	-webkit-transition: all 0.3s;
