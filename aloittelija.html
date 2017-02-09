@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+			<meta name="description" content="Raahentienoon Golf ry. Bootstrap-based template.">
+			<meta name="author" content="Raahentienoon Golf">
+			<link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+			<title>DRAFT!! Raahentienoon Golf</title>
+
+			<!-- Bootstrap core CSS -->
+			<link href="css/bootstrap.min.css" rel="stylesheet">
+
+			<!-- Custom styles for this template -->
+			<link href="css/custom.css" rel="stylesheet">
+			<link href="css/flexslider.css" rel="stylesheet">
+			
+			    <!-- Slick slider css file -->
+    <link href="css/slick.css" rel="stylesheet"> 
+	    <!-- Elastic grid css file -->
+    <link rel="stylesheet" href="css/elastic_grid.css"> 
+			
+			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+			<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+			<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,400,700" rel="stylesheet">
+
+			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+			<![endif]-->
+			<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 110,
+                header = document.querySelector(".navbar-header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+			header = document.querySelector(".navbar-brand");
+			if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+			header = document.querySelector(".navbar-inverse");
+			if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+
+		</head>
+
+		<body>
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#topWrap">
+							<span class="fa-stack fa-lg">
+								<img src="assets/img/logo.png">
+							</span>
+							Raahen<span class="title">tienoon Golf</span>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse appiNav">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jäsenet <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<!-- <img src="assets/ico/extlink.png"> -->
+								<li><a href="http://www.nexgolf.fi/rtg/">Ajanvaraus <i class="fa fa-share"></i></a></li>
+								<li><a href="http://rtg.nexgolf.fi/rtg/tournaments.nxg">Kilpailut <i class="fa fa-share"></i></a></li>
+								<li><a href="#">Golfnaiset</a></li>
+								<li><a href="#">Golfseniorit</a></li>
+								<li><a href="#">Juniorit</a></li>
+								<li><a href="#">Seuran mestarit</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Pelaaminen:</li>
+								<li><a href="#">Pelioikeudet</a></li>
+								<li><a href="#">Osakkeenomistajat</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vieraat <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Hinnasto</a></li>
+								<li><a href="http://rtg.nexgolf.fi/rtg/tournaments.nxg">Kilpailut  <i class="fa fa-share"></i></a></li>
+								<li><a href="#">Ajo-ohjeet</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aloittelijat <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Green Card</a></li>
+								<li><a href="#">Aloittelijan polku</a></li>
+								<li><a href="#">Pelaamaan</a></li>
+								<li><a href="#">Jäseneksi</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kenttä <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Vierailu</a></li>
+								<li><a href="#">Väyläkartta</a></li>
+								<li><a href="#">Kuvagalleria</a></li>
+								<li><a href="#">Paikallissäännöt</a></li>
+								<li><a href="#">Kilpailumääräykset</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Palvelut <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Ravintola</a></li>
+								<li><a href="#">Proshop</a></li>
+								<li><a href="#">Koulutus</a></li>
+								<li><a href="#">Matkat</a></li>
+
+							  </ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yhteys <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Ravintola</a></li>
+								<li><a href="#">Koulutus</a></li>
+								<li><a href="#">Matkat</a></li>
+								<li><a href="#">Proshop</a></li>
+							  </ul>
+							</li>
+				
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+	
+			<div id="topWrap" class="jumbotron_std">
+					
+			</div>
+
+	
+	<div id="productWrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="sectionTitle">Miksi minä muka pelaisin golfia?</h2></p>
+					<h3 class="sectionTitle">Golf on hyvä liikuntamuoto fyysiselle ja henkiselle hyvinvoinnille. Golffari elää viisi vuotta pidempään!</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-md-offset-1">
+					<div class="imgWrap">
+						<img class="img-responsive" src="assets/img/tablet.jpg"/>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="productFeatures clearfix">
+						<div class="col-xs-2 icon">
+							<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+							</span>
+						</div>
+						<div class="col-xs-10">
+							<h3>Fyysiset vaikutukset</h3>
+							<p>Golfilla on tutkimusten mukaan <a href="http://www.ed.ac.uk/news/2016/golf-s-many-benefits-brought-to-the-fore-in-health">monia positiivisia vaikutuksia</a> terveyteen. Se on pitkävaikutteista liikuntaa, jossa syke säilyy sopivalla tasolla. Golf alentaa verenpainetta, vaikuttaa suotuisasti veren rasva-arvoihin, parantaa tasapainoa ja laskee keskimääräistä sydämen sykettä. 
+							Golfin pelaaja elää tutkitusti keskimäärin <a href="http://golfnetworkadmin.gamznhosting.com/site/_content/document/00017542-source.pdf">viisi vuotta pidempään</a>!</p>
+						</div>
+						<div class="col-xs-2 icon">
+							<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-smile-o fa-stack-1x fa-inverse"></i>
+							</span>
+						</div>
+						<div class="col-xs-10">
+							<h3>Henkiset vaikutukset</h3>
+							<p>Luonnossa, kauniissa ja rauhallisessa ympäristössä liikkuminen on rentouttavaa. Golfia harjoitellessa uuden oppiminen ja pelatessa lyöntien suunnittelu on aivoille parasta mahdollista jumppaa. Golf haastaa harrastajansa!</p>
+						</div>
+						<div class="col-xs-2 icon">
+							<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-users fa-stack-1x fa-inverse"></i>
+							</span>
+						</div>
+						<div class="col-xs-10">
+							<h3>...ja vielä se sosiaalinen puoli!</h3>
+							<p> Golf on erinomainen koko perheen harrastus. Pelin seurallinen luonne tuo pelaajalle henkistä ja sosiaalista pääomaa, jota monipuolinen ja lämminhenkinen seuratoiminta vielä voi kartuttaa. Meillä ei sinun tarvitse pelata yksin!</p>
+						</div>
+						<div class="col-xs-2 icon">
+							<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-euro fa-stack-1x fa-inverse"></i>
+							</span>
+						</div>
+						<div class="col-xs-10">
+							<h3>...mutta golfhan on kallista?</h3>
+							<p>No eikä ole! Se mitään kallista ole... tai no saattaahan se äkkiseltään köyhästä tuntua kalliilta.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /productWrap -->
+	
+	<div id="pricingWrap"  class="altWrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="sectionTitle">Kuinka pääsen pelaamaan?</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<ul class="priceTable">
+						<li class="title">Osakas</li>
+						<li class="description">Osakkeen omistajille</li>
+						<li class="price">90€ + 390€/kausi</li>
+						<ul class="features">
+							<li>Aina taattu hyvä sää</li>
+							<li>Alennukset kilpailumaksuista</li>
+							<li>Osakaskilpailu</li>
+							<li>Pelikaverit kehuu hyväksi</li>
+						</ul>
+						<li class="call">
+							<a class="btn btn-success btn-lg" href="#">Lue lisää</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<ul class="priceTable alt">
+						<li class="title">Kymppikortti</li>
+						<li class="description">Vähän vähemmän pelaavalle</li>
+						<li class="price">90€ + 250€/10 kierrosta</li>
+						<ul class="features">
+							<li>Kelien kanssa arpomista</li>
+							<li>Mälsät pelikaverit</li>
+							<li>Enemmän hukattuja palloja</li>
+							<li>Lievää slaissia avareissa</li>
+						</ul>
+						<li class="call">
+							<a class="btn btn-success btn-lg" href="#">Lue lisää</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<ul class="priceTable">
+						<li class="title">Green fee</li>
+						<li class="description">Käy kaikille</li>
+						<li class="price">90€ + 30€/kierros</li>
+						<ul class="features">
+							<li>Saattaa sataa vettä</li>
+							<li>Aivan onnettomat pelikaverit</li>
+							<li>Lyhyetkään putit ei uppoa</li>
+							<li>Väljähtynyttä kaljaa tauolla</li>
+						</ul>
+						<li class="call">
+							<a class="btn btn-success btn-lg" href="#">Lue lisää</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /pricingWrap -->
+	
+ 
+	
+	<div id="contactWrap">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+						<div class="col-xs-12">
+						<h2 class="sectionTitle">Ota yhteyttä!</h2>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<div class="blurb">
+						Lähetä viesti, vastaamme jos jaksamme!
+						</div>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-2">
+							<div class="inputContainer">
+							<label>Nimi</label>
+								<input type="text" name="contactName" id="contactName" value="" class="form-control" autocomplete="off" />
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="inputContainer">
+							<label class="screen-reader-text">Sähköpostiosoite (jos haluat vastauksen)</label>
+								<input type="text" name="email" id="email" value="" class="form-control" autocomplete="off"  />
+							</div>
+						</div>
+						<div class="col-sm-8 col-sm-offset-2">
+							<div class="inputContainer">
+							<label class="screen-reader-text">Viesti</label>
+								<textarea name="comments" id="commentsText" class="form-control" autocomplete="off"></textarea>
+							</div>
+						</div>
+						<div class="col-sm-8 col-sm-offset-2">
+							<button name="submit" type="button" class="btn btn-primary btn-lg">LÄHETÄ</button>
+						</div>
+	
+					</div>
+			</div>
+		</div>
+		
+		
+	</div> <!-- /contactWrap -->
+	
+	<footer>
+	<div class="mapwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+									<iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18130.843860638968!2d24.71304972309854!3d64.81481961890094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x93586eb67d153486!2sRaahentienoon+Golf!5e0!3m2!1sen!2sfi!4v1486665367251" width="800" height="600" frameborder="0" style="border:0"></iframe>
+					<p>Copyright &copy; 2017 RTG.</p>
+
+				</div>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flexslider.js"></script>
+	
+    <!-- Google map -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/jquery.ui.map.js"></script>
+	
+	    <!-- slick slider -->
+    <script src="js/slick.min.js"></script>  
+	
+	   <script src="js/elastic_grid.min.js"></script>
+	      <script src="js/custom.js"></script>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$('.mobileSlider').flexslider({
+		animation: "slide",
+		slideshowSpeed: 8000,
+		animationSpeed: 1500,
+		controlNav: false,
+		directionNav: true,
+		prevText: "&#171;",
+		nextText: "&#187;"
+	});
+	$('.flexslider').flexslider({
+		animation: "slide",
+		directionNav: false
+	});
+	
+
+		
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if ($(window).width() < 768) {
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top - $('.navbar-header').outerHeight(true) + 1
+					}, 1000);
+					return false;
+				}
+			}
+			else {
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top - $('.navbar').outerHeight(true) + 1
+					}, 1000);
+					return false;
+				}
+			}
+
+		}
+	});
+	
+	$('.clients_content').slick({
+    dots: false,
+    prevArrow: false,
+    nextArrow: false
+	});
+	
+	$('#toTop').click(function() {
+		$('html,body').animate({
+			scrollTop: 0
+		}, 1000);
+	});
+	
+	var timer;
+    $(window).bind('scroll',function () {
+        clearTimeout(timer);
+        timer = setTimeout( refresh , 50 );
+    });
+    var refresh = function () {
+		if ($(window).scrollTop()>100) {
+			$(".tagline").fadeTo( "slow", 0 );
+		}
+		else {
+			$(".tagline").fadeTo( "slow", 1 );
+		}
+    };
+		
+});
+</script>
+  </body>
+</html>

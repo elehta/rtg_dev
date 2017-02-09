@@ -73,7 +73,7 @@ hr.styled {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; 
-/*	height: 90px !important;  */
+
 }
 .navbar-header {
 	
@@ -96,6 +96,11 @@ hr.styled {
     transition: all 0.3s; 
 }
 
+.navbar .container{
+	min-width: 70%;
+		margin-left: auto !important;  
+		margin-right: auto !important;
+}
 
 .navbar-inverse {
 	
@@ -220,6 +225,20 @@ hr.styled {
 
 .jumbotron {
 	background: url(../assets/img/bigBG.jpg) no-repeat center center scroll; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 0;
+    padding-top: 125px;
+	padding-bottom: 70px;
+	color: #fff;
+	margin-bottom: 0;
+	opacity: 0.85;
+}
+.jumbotron_std{
+	background: url(../assets/img/bigBG.jpg) no-repeat left top scroll;
+	background-position: 0px -160px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -746,11 +765,12 @@ hr.styled {
 footer {
 	background: #444;
 	padding: 40px 0;
+
 }
 footer p {
 	color: #ddd;
     font-weight: 300;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
 	font-size: 12px;
 }
 footer .social {
@@ -766,6 +786,11 @@ footer .social a:hover {
 footer .social a .fa-inverse {
 	color: #444;
 }
+footer iframe{
+	min-height: 500px;
+}
+
+
 
 /**********************************************************************/
 /****************** MEDIA QUERIES ************************************/
