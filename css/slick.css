@@ -78,7 +78,7 @@
 [dir="rtl"] .slick-next:before { content: "<"; }
 
 /* Dots */
-.slick-slider { margin-bottom: 20px; }
+.slick-slider { margin-bottom: 0px; }  /* if dots are used for navigation add bottom-margin, e.g. 20 px */
 
 .slick-dots { position: absolute; bottom: -45px; list-style: none; display: block; text-align: center; padding: 0; width: 100%; }
 .slick-dots li { position: relative; display: inline-block; height: 20px; width: 20px; margin: 0 5px; padding: 0; cursor: pointer; }

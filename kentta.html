@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+			<meta name="description" content="Raahentienoon Golf ry. Bootstrap-based template.">
+			<meta name="author" content="Raahentienoon Golf">
+			<link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+			<title>DRAFT!! Raahentienoon Golf</title>
+
+			<!-- Bootstrap core CSS -->
+			<link href="css/bootstrap.min.css" rel="stylesheet">
+
+			<!-- Custom styles for this template -->
+			<link href="css/custom.css" rel="stylesheet">
+			<link href="css/flexslider.css" rel="stylesheet">
+			
+			    <!-- Slick slider css file -->
+    <link href="css/slick.css" rel="stylesheet"> 
+	    <!-- Elastic grid css file -->
+    <link rel="stylesheet" href="css/elastic_grid.css"> 
+			
+			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+			<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+			<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,400,700" rel="stylesheet">
+
+			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+			<![endif]-->
+			<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 30,
+                header = document.querySelector(".navbar-header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+			header = document.querySelector(".navbar-brand");
+			if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+			header = document.querySelector(".navbar-inverse");
+			if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+	</head>
+		<body>
+ <!--=========== START NAVIGATION SECTION ================-->	
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+				 <!--=========== START LOGO  ================-->	
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">
+							<span class="fa-stack fa-lg">
+								<img src="assets/img/logo.png">
+							</span>
+							Raahen<span class="title">tienoon Golf</span>
+						</a>
+					</div>
+					<!--=========== END LOGO  ================-->
+					
+					<!--=========== START MENU  ================-->
+					<div class="collapse navbar-collapse appiNav">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jäsenet <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<!-- <img src="assets/ico/extlink.png"> -->
+								<li><a href="http://www.nexgolf.fi/rtg/">Ajanvaraus <i class="fa fa-share"></i></a></li>
+								<li><a href="http://rtg.nexgolf.fi/rtg/tournaments.nxg">Kilpailut <i class="fa fa-share"></i></a></li>
+								<li><a href="#">Golfnaiset</a></li>
+								<li><a href="#">Golfseniorit</a></li>
+								<li><a href="#">Juniorit</a></li>
+								<li><a href="#">Seuran mestarit</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Pelaaminen:</li>
+								<li><a href="#">Pelioikeudet</a></li>
+								<li><a href="#">Osakkeenomistajat</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vieraat <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Hinnasto</a></li>
+								<li><a href="http://rtg.nexgolf.fi/rtg/tournaments.nxg">Kilpailut  <i class="fa fa-share"></i></a></li>
+								<li><a href="#">Ajo-ohjeet</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aloittelijat <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="aloittelija.html">Alkeiskurssit</a></li>
+								<li><a href="#">Pelioikeudet</a></li>
+								<li><a href="#">Jäseneksi</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kenttä <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Vierailu</a></li>
+								<li><a href="#">Väyläkartta</a></li>
+								<li><a href="#">Kuvagalleria</a></li>
+								<li><a href="#">Paikallissäännöt</a></li>
+								<li><a href="#">Kilpailumääräykset</a></li>
+							  </ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Palvelut <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Ravintola</a></li>
+								<li><a href="#">Proshop</a></li>
+								<li><a href="#">Koulutus</a></li>
+								<li><a href="#">Matkat</a></li>
+
+							  </ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yhteys <span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+								<li><a href="#">Ravintola</a></li>
+								<li><a href="#">Koulutus</a></li>
+								<li><a href="#">Matkat</a></li>
+								<li><a href="#">Proshop</a></li>
+							  </ul>
+							</li>
+				
+						</ul>
+					</div>
+					<!--=========== END MENU  ================-->
+				</div>
+			</div>
+ <!--=========== END NAVIGATION SECTION ================-->	
+	
+			<div id="topWrap" class="jumbotron_std">
+					<div class="container">
+					</div>
+			</div>
+
+			<!-- ALKEISKURSSIT -->
+	
+		<div id="productWrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2 class="sectionTitle">Kenttäesittely</h2></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-md-8">								
+						<div class="imgWrapRotate">
+							<img class="img-responsive" src="img/kentta.gif" width="700px">
+						</div>
+					</div>
+					<div class="col-6 col-md-4">
+						<h6>Siikajoen kenttä</h6>
+						<p>18 reikää, par 72</p>
+						<p>Avattu 18.8.1990</p>
+						<p>Suunnittelu: Heikki Kuronen (1-9)</p>
+						<p>Juhani Tanner (10-18)</p>
+						<p>Kenttämestari Juha Linde</p>
+						<p>Kentän luonne:<br>
+						Pohjanmaan merenrannikolla melko tasainen kenttä, silti haastava vesiesteineen ja bunkkereineen. 
+						Pelikausi alkaa aikaisin keväällä ja päättyy myöhään syksyllä. Pohjolan valkeiden kesäöiden ansiosta 
+						pelata voi kesä-heinäkuussa pelata vaikka läpi yön. Kentällä hyvin tilaa myös aloittelijoille, varsinkin päivällä.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+
+				</div>
+			</div>
+		</div>
+<!-- /ALKEISKURSSIT -->		
+			
+			    <!--=========== BEGIN TEAM SECTION ================-->
+	<div id="teamWrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <!-- BEGIN ABOUT HEADING -->
+            <div class="heading">
+			<h2 class="sectionTitle">Väyläesittelyt</h2>            
+            </div>
+            <div class="team_area">
+              <!-- BEGIN TEAM SLIDER -->
+              <div class="team_slider">  
+                <!-- BEGIN SINGLE TEAM SLIDE#1 -->              
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla1.gif" alt="img"><h7>1</h7><h8>par 4<br>hcp 4</h8>
+                    </div>
+
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>258</td>
+							<td>258</td>
+							<td>298</td>
+							<td>324</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5 class="">Pekurin kulma</h5>
+                    <span>Etuysin vaikeahko avaus</span>
+
+					
+                    <p>Uloslyönti kohti kolmea väyläbunkkeria. Metsä oikealla on out of bounds. Lähestymislyöntiä häiritsee oikealle kääntyvän jyrkän doglegin kulmassa ylitettävä vesieste. Out jatkuu oikealla metsän reunassa greenin tasalle saakka. Greeniä vartioi edessä vasemmalla iso mänty ja edessä oikealla greenibunkkeri. Myös vasemmalla sivulla bunkkeri, mutta takana pallot nielevässä kanervikossa on tilaa. Greeni taakse nouseva.</p>
+
+
+                  </div>
+                </div>
+                <!-- BEGIN SINGLE TEAM SLIDE#2 -->
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla2.gif" alt="img"><h7>2</h7><h8>par 4<br>hcp 18</h8>
+                    </div>
+										<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th><th>51</th><th>56</th><th>61</th>
+						  </tr>
+						  <tr>
+							<td>258</td><td>260</td><td>260</td><td>275</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Betoni</h5>
+                    <span>lyhyt pitkälyöntisen ensimmäinen houkutus</span>                        
+                    <p>Avaus kohti vasenta väyläbunkkeria on turvallinen valinta, sillä out-raja kulkee koko väylän pituudelta oikealla tien takareunassa. Myös oikealla on väyläbunkkeri. Voimakkaasti kumpuilevan greenin edessä oikealla on greenibunkkeri. Greenin takana on lampi.</p>
+
+                  </div>
+                </div>
+                <!-- BEGIN SINGLE TEAM SLIDE#3 -->
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla3.gif" alt="img"><h7>3</h7><h8>par 4<br>hcp 10</h8>
+                    </div>
+					
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>282</td>
+							<td>282</td>
+							<td>329</td>
+							<td>378</td>
+						  </tr>
+						  </table>
+					</div>
+						
+                    <h5>Rehula</h5>
+                    <span>pitkä suora</span>                        
+                    <p>Lataa täysillä oikean puolen väyläbunkkerin ja männyn välistä – mitä pitempi sen parempi. Varo kuitenkin oikean laidan outtia, joka alkaa tierummun takaa ja jatkuu ojan reunassa bunkkerin ohi 30 metriä ja muuttuu sitten sivuvesiesteeksi. Männyn ja koivujen takana vasemmalla on myös väyläbunkkeri. Helpon greenin oikealla puolella ja takana on bunkkerit.</p>
+
+                  </div>
+                </div>
+                <!-- BEGIN SINGLE TEAM SLIDE#4 -->
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla4.gif" alt="img"><h7>4</h7><h8>par 3<br>hcp 14</h8>
+                    </div>
+										<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>152</td>
+							<td>152</td>
+							<td>193</td>
+							<td>210</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Pottupelto</h5>
+                    <span>ylipitkä kolmonen</span>                        
+                    <p>Greeni ottaa kyllä hyvin vastaan, tarvitaan vain pitkä ja suora lyönti. Hookit ja slaissit löytyvät kohtuudella. Greenin etuoikealla bunkkeri, takana tie ja tien takana out of bounds.</p>
+
+                  </div>
+                </div>
+                <!-- BEGIN SINGLE TEAM SLIDE#5 -->
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla5.gif" alt="img">
+					  <h7>5</h7>
+					  <h8>par 4<br>hcp 12</h8>
+                    </div>
+										<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>263</td>
+							<td>306</td>
+							<td>316</td>
+							<td>354</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Pumppaamo</h5>
+                    <span>taktinen väylä</span>                        
+                    <p>Uloslyönnissä ahnehtivaa vaanii pumppaamokumpareen takana poikittainen oja. Tien vierellä vasemmalla on sivuvesieste. Greenin edessä sekä molemmilla sivuilla on lähes huomaamattomat bunkkerit. Heti greenin takana on out. Myös oikealla metsän reunassa on out. Greeni on leveä, lyhyt, matala, suora ja epätasainen.</p>
+
+                  </div>
+                </div>
+                <!-- BEGIN SINGLE TEAM SLIDE#6 -->
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla6.gif" alt="img">
+					  <h7>6</h7>
+					  <h8>par 4<br>hcp 8</h8>
+                    </div>
+										<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>299</td>
+							<td>299</td>
+							<td>342</td>
+							<td>401</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Maneesi</h5>
+                    <span>leveä ja pitkä</span>                        
+                    <p>Antaa palaa täysillä yli joen ylös kummulle kohti maneesin päätyä. Oikealla laidalla on
+2 väyläbunkkeria ja vasemmalla tien vieressä sivuvesieste. Matin lampi odottelee oikealla ennen greeniä, jonka ympärillä on 3 bunkkeria, etuvasemmalla, oikealla ja takaoikealla. Helpon greenin takana tien varressa on out. Myös vasemmalla kylätien takana on out.</p>
+
+                  </div>
+                </div>
+                <!-- BEGIN SINGLE TEAM SLIDE#7 -->
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla7.gif" alt="img">
+					  <h7>7</h7>
+					  <h8>par 5<br>hcp 6</h8>
+                    </div>
+										<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>386</td>
+							<td>396</td>
+							<td>425</td>
+							<td>444</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Kiuru</h5>
+                    <span>lyhyt vitonen</span>                        
+                    <p>Avaus väyläkuusen vasemmalta puolelta kohti oikealla olevaa sivu- vesiestettä. Oikealla kuusen takana on kaksi bunkkeria. Väylän vasemmassa reunassa on kaksi ruohobunkkeria ja niiden jälkeen taas vesieste. Vesiesteiden jälkeen on jyrkkä dogleg oikealle, ”loppusuoralle”, joten toinen lyönti on suunnattava sivuvesiesteen yli. Suoran lopussa vasemmalla on bunkkeri ja oikealla koko matkan ojan varressa out. Laajan greenin lähestymistä vaikeuttaa kolmella sivulla lainehtiva vesieste.</p>
+
+                  </div>
+                </div>
+                <!-- BEGIN SINGLE TEAM SLIDE#8 -->
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla8.gif" alt="img">
+					  <h7>8</h7>
+					  <h8>par 3<br>hcp 16</h8>
+                    </div>
+										<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>79</td>
+							<td>106</td>
+							<td>119</td>
+							<td>135</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Tapsetti</h5>
+                    <span>haastava mutta palkitseva kolmonen</span>                        
+                    <p>Komean kaksitasogriinin edessä todellinen pallomeri. Vasemmalla sivulla bunkkeri. Tapset palkitsee kilpailussa tehdyn Hole in Onen.</p>
+
+                  </div>
+                </div>				
+				
+				<!-- BEGIN SINGLE TEAM SLIDE#9 -->
+			   <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla9.gif" alt="img">
+					  <h7>9</h7>
+					  <h8>par 5<br>hcp 2</h8>
+                    </div>
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>426</td>
+							<td>439</td>
+							<td>478</td>
+							<td>504</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Ruukki</h5>
+                    <span>pitkä vitonen</span>                        
+                    <p>Uloslyönti oikean puolen metsän reunaa raapien väyläkummun yli. Vasemmalla ensin vino vesieste ja sitten kolme bunkkeria. Jatko taipuu vasemmalle kapean nielun kautta. Tässä kohtaa puuttuu peliin oikean laidan vesiesteoja, joka loppuu reilusti ennen greenin oikealla puolella olevaa metsää. Väylän vasemmalla sivulla alkaa ennen greeniä lampi, joka yltää greenin takareunan tasalle saakka. Ilmeikkään greenin takaoikealla on vesieste. Klubin pihatien reunassa kulkee out of bounds.</p>
+
+                  </div>
+                </div>				
+
+				
+				<!-- BEGIN SINGLE TEAM SLIDE#10 -->
+			   <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla10.gif" alt="img">
+					  <h7 class="h7double">10</h7>
+					  <h8 class="h8double">par 4<br>hcp 11</h8>
+                    </div>
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>264</td>
+							<td>271</td>
+							<td>311</td>
+							<td>342</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Mäntylä</h5>
+                    <span>takaysin leppoisa avaus</span>                        
+                    <p>Uloslyönti väylämännyn ja bunkkerin väliin tai vähän pidemmällekin. Jatko kahden greenimännyn yli tai oikealta ohi viheriölle. Liian pitkät tai slaissaavat lähestymiset poimii tehokkaasti etuoikealta greenin taakse kiertyvä syvä lampi. Greeni on korotettu, kumpuileva ja avautuu hyvin etenkin väylän oikealta laidalta tuleville lähestymisille.</p>
+
+                  </div>
+                </div>					
+
+				<!-- BEGIN SINGLE TEAM SLIDE#11 -->
+			   <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla11.gif" alt="img">
+					  <h7 class="h7double">11</h7>
+					  <h8 class="h8double">par 4<br>hcp 3</h8>
+                    </div>
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>273</td>
+							<td>273</td>
+							<td>335</td>
+							<td>355</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Ojala</h5>
+                    <span>pitkä ja kapea</span>                        
+                    <p>Vesiesteoja vasemmalla sivulla seurailee väylän reunaa lyöntipaikkojen edestä greenin lähelle saakka. Riittävän pitkän uloslyönnin alastulopaikka on kapea, kaksi väyläbunkkeria oikealla, puita ja vesieste vasemmalla, vaatii tarkkuutta ja ehkä kontrolloitua hookia. Greenin edessä oikealla on bunkkeri. Vasemmalla edessä oleva bunkkeri yrittää pysäyttää lampea kohti rullivat pallot. Vaikein lipunpaikka on L-muotoisen greenin takaosassa oikealla bunkkerin takana.</p>
+
+                  </div>
+                </div>	
+
+				<!-- BEGIN SINGLE TEAM SLIDE#12 -->
+			   <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla12.gif" alt="img">
+					  <h7 class="h7double">12</h7>
+					  <h8 class="h8double">par 5<br>hcp 5</h8>
+                    </div>
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>405</td>
+							<td>441</td>
+							<td>449</td>
+							<td>465</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Väärä vitonen</h5>
+                    <span>tiukka dogleg lopussa</span>                        
+                    <p>Jos avaus väyläbunkkereiden viereen tai yli jää lyhyeksi, kannattaa harkita taktiikan muutosta. Kakkoslyöntiä nimittäin vaanii lopun oikealle kääntyvän doglegin kulmassa keskellä väylää bunkkeri. Oikean puolen metsän kulman onnistuneet ylitykset palkitaan, sillä loppusuoralla on tilaa. Greenin edessä vasemmalla ja sivulla oikealla on bunkkerit. Vesieste-joki virtailee greenin vasemmalla puolella. Greeni kallistuu vasemmalle kohti jokea ja osa greenistä piiloutuu etubunkkerin takana olevan kummun kätköihin.</p>
+
+                  </div>
+                </div>	
+
+				<!-- BEGIN SINGLE TEAM SLIDE#13 -->
+			   <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla13.gif" alt="img">
+					  <h7 class="h7double">13</h7>
+					  <h8 class="h8double">par 3<br>hcp 17</h8>
+                    </div>
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>105</td>
+							<td>141</td>
+							<td>149</td>
+							<td>165</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Väärä kolmonen</h5>
+                    <span>tiukka dogleg lopussa</span>                        
+                    <p>Jos avaus väyläbunkkereiden viereen tai yli jää lyhyeksi, kannattaa harkita taktiikan muutosta. Greeni kallistuu vasemmalle kohti jokea ja osa greenistä piiloutuu etubunkkerin takana olevan kummun kätköihin.</p>
+
+                  </div>
+                </div>
+
+				<!-- BEGIN SINGLE TEAM SLIDE#14 -->
+			   <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla14.gif" alt="img">
+					  <h7 class="h7double">14</h7>
+					  <h8 class="h8double">par 4<br>hcp 9</h8>
+                    </div>
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>305</td>
+							<td>341</td>
+							<td>349</td>
+							<td>365</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Väärä nelonen</h5>
+                    <span>tiukka dogleg alussa</span>                        
+                    <p>Jos avaus väyläbunkkereiden viereen tai yli jää lyhyeksi, kannattaa harkita taktiikan muutosta. Greeni kallistuu vasemmalle kohti jokea ja osa greenistä piiloutuu etubunkkerin takana olevan kummun kätköihin.</p>
+
+                  </div>
+                </div>
+
+				<!-- BEGIN SINGLE TEAM SLIDE#15 -->
+			   <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla15.gif" alt="img">
+					  <h7 class="h7double">15</h7>
+					  <h8 class="h8double">par 3<br>hcp 15</h8>
+                    </div>
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>105</td>
+							<td>141</td>
+							<td>149</td>
+							<td>165</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Väärä kolmonen</h5>
+                    <span>tiukka dogleg keskellä</span>                        
+                    <p>Jos avaus väyläbunkkereiden viereen tai yli jää lyhyeksi, kannattaa harkita taktiikan muutosta. Greeni kallistuu vasemmalle kohti jokea ja osa greenistä piiloutuu etubunkkerin takana olevan kummun kätköihin.</p>
+
+                  </div>
+                </div>
+
+				<!-- BEGIN SINGLE TEAM SLIDE#16 -->
+			   <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla16.gif" alt="img">
+					  <h7 class="h7double">16</h7>
+					  <h8 class="h8double">par 4<br>hcp 13</h8>
+                    </div>
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>305</td>
+							<td>341</td>
+							<td>349</td>
+							<td>365</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Väärä nelonen</h5>
+                    <span>tiukka dogleg vieressä</span>                        
+                    <p>Jos avaus väyläbunkkereiden viereen tai yli jää lyhyeksi, kannattaa harkita taktiikan muutosta. Greeni kallistuu vasemmalle kohti jokea ja osa greenistä piiloutuu etubunkkerin takana olevan kummun kätköihin.</p>
+
+                  </div>
+                </div>
+
+				<!-- BEGIN SINGLE TEAM SLIDE#17 -->
+			   <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla17.gif" alt="img">
+					  <h7 class="h7double">17</h7>
+					  <h8 class="h8double">par 4<br>hcp 11</h8>
+                    </div>
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>305</td>
+							<td>341</td>
+							<td>349</td>
+							<td>365</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Väärä nelonen</h5>
+                    <span>tuhti dogleg alussa</span>                        
+                    <p>Jos avaus väyläbunkkereiden viereen tai yli jää lyhyeksi, kannattaa harkita taktiikan muutosta. Greeni kallistuu vasemmalle kohti jokea ja osa greenistä piiloutuu etubunkkerin takana olevan kummun kätköihin.</p>
+
+                  </div>
+                </div>
+
+				<!-- BEGIN SINGLE TEAM SLIDE#18 -->				
+			   <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="single_team wow fadeInUp">
+                    <div class="team_img">
+                      <img src="img/vayla18.gif" alt="img">
+					  <h7 class="h7double">18</h7>
+					  <h8 class="h8double">par 5<br>hcp 1</h8>
+                    </div>
+					<div class="team_meters">
+					<table>
+						  <tr>
+							<th>49</th>
+							<th>51</th>
+							<th>56</th>
+							<th>61</th>
+						  </tr>
+						  <tr>
+							<td>405</td>
+							<td>441</td>
+							<td>449</td>
+							<td>465</td>
+						  </tr>
+						  </table>
+						</div>
+						
+                    <h5>Väärä viitonen</h5>
+                    <span>tiukka vesieste keskellä</span>                        
+                    <p>Jos avaus väyläbunkkereiden viereen tai yli jää lyhyeksi, kannattaa harkita taktiikan muutosta. Greeni kallistuu vasemmalle kohti jokea ja osa greenistä piiloutuu etubunkkerin takana olevan kummun kätköihin.</p>
+
+                  </div>
+                </div>
+
+				
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=========== END TEAM SECTION ================-->
+	
+	
+
+		
+
+	
+	<footer>
+		<div class="mapwrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-5 col-sm-5">
+						<div class="contactInfo">
+							<h5>
+								 Raahentienoon Golf Ry<br>
+								 Siikajoen golfkenttä<br>
+							</h5>
+							<h6>
+								Raahentie 151<br>
+								92320 SIIKAJOKI<br>
+								(Siikajoenkylältä 1,5 km Raaheen päin)
+							</h6>
+							<h6>
+								Head Caddiemaster<br>
+								Tuomas Ketola<br>
+								<i class="fa fa-phone fa-fw"> </i> 044 971 1156<br>
+								<i class="fa fa-envelope fa-fw"> </i> cm@rtg.fi<br>
+							</h6>
+							
+							<p> </p>
+						</div>
+					</div>
+					
+					<div class="col-lg-7 col-md-7 col-sm-7">
+						<!--<div class="col-xs-12 text-center">  -->	
+						<iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18130.843860638968!2d24.71304972309854!3d64.81481961890094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x93586eb67d153486!2sRaahentienoon+Golf!5e0!3m2!1sen!2sfi!4v1486665367251" width="800" height="600" frameborder="0" style="border:0"></iframe>
+					</div>
+				</div>				
+			</div>
+		</div>		
+	</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flexslider.js"></script>
+	
+    <!-- Google map -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/jquery.ui.map.js"></script>
+	
+	    <!-- slick slider -->
+    <script src="js/slick.min.js"></script>  
+	
+	   <script src="js/elastic_grid.min.js"></script>
+	      <script src="js/custom.js"></script>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$('.mobileSlider').flexslider({
+		animation: "slide",
+		slideshowSpeed: 8000,
+		animationSpeed: 1500,
+		controlNav: false,
+		directionNav: true,
+		prevText: "&#171;",
+		nextText: "&#187;"
+	});
+	$('.flexslider').flexslider({
+		animation: "slide",
+		directionNav: false
+	});
+	
+
+		
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if ($(window).width() < 768) {
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top - $('.navbar-header').outerHeight(true) + 1
+					}, 1000);
+					return false;
+				}
+			}
+			else {
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top - $('.navbar').outerHeight(true) + 1
+					}, 1000);
+					return false;
+				}
+			}
+
+		}
+	});
+	
+	$('.clients_content').slick({
+    dots: false,
+    prevArrow: false,
+    nextArrow: false
+	});
+	
+	$('#toTop').click(function() {
+		$('html,body').animate({
+			scrollTop: 0
+		}, 1000);
+	});
+	
+	var timer;
+    $(window).bind('scroll',function () {
+        clearTimeout(timer);
+        timer = setTimeout( refresh , 50 );
+    });
+    var refresh = function () {
+		if ($(window).scrollTop()>100) {
+			$(".tagline").fadeTo( "slow", 0 );
+		}
+		else {
+			$(".tagline").fadeTo( "slow", 1 );
+		}
+    };
+		
+});
+</script>
+  </body>
+</html>
