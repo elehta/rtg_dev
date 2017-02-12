@@ -237,15 +237,15 @@ hr.styled {
 	opacity: 0.85;
 }
 .jumbotron_std{
-	background: url(../assets/img/bigBG.jpg) no-repeat left top scroll;
-	background-position: 0px -160px;
+	background: url(../assets/img/bigBG.jpg) no-repeat scroll;
+	background-position: center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	padding-bottom: 0;
-    padding-top: 125px;
-	padding-bottom: 70px;
+    padding-top: 100px;
+	padding-bottom: 0px;
 	color: #fff;
 	margin-bottom: 0;
 	opacity: 0.85;
@@ -442,6 +442,9 @@ hr.styled {
 	text-align: right;
 	color: #0094AA;
 	font-size: 20px;
+}
+#productWrap .fa-ul{
+	line-height: 50px;
 }
 /*--------------------*/
 /* BLOG SECTION */
@@ -721,9 +724,7 @@ hr.styled {
     background: url("../assets/img/60.png");
 	padding-bottom: 60px;
 }
-#contactWrap h2.sectionTitle {
-    border-bottom: 1px solid #fff;
-}
+
 #contactWrap .blurb {
     font-size: 24px;
     font-weight: 300;
@@ -895,6 +896,7 @@ footer iframe{
 	#productWrap .imgWrap img {
 		margin: 0 auto 60px;
 	}
+
 	#contactWrap .blurb {
 		font-size: 20px;
 	}

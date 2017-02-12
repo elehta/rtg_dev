@@ -37,7 +37,7 @@
     function init() {
         window.addEventListener('scroll', function(e){
             var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 110,
+                shrinkOn = 30,
                 header = document.querySelector(".navbar-header");
             if (distanceY > shrinkOn) {
                 classie.add(header,"smaller");
@@ -79,7 +79,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#topWrap">
+						<a class="navbar-brand" href="index.html">
 							<span class="fa-stack fa-lg">
 								<img src="assets/img/logo.png">
 							</span>
@@ -115,8 +115,7 @@
 							<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aloittelijat <span class="caret"></span></a>
 							  <ul class="dropdown-menu">
-								<li><a href="#">Green Card</a></li>
-								<li><a href="#">Aloittelijan polku</a></li>
+								<li><a href="aloittelija.html">Alkeiskurssit</a></li>
 								<li><a href="#">Pelaamaan</a></li>
 								<li><a href="#">Jäseneksi</a></li>
 							  </ul>
@@ -160,19 +159,93 @@
 					
 			</div>
 
+<!-- ALKEISKURSSIT -->
 	
-	<div id="productWrap">
+		<div id="productWrap">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2 class="sectionTitle">Miksi minä muka pelaisin golfia?</h2></p>
+					<h2 class="sectionTitle">KAUDEN 2017 ALKEISKURSSIT</h2></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-md-offset-1">
+				<p style="font-weight:700;"> Päivämäärät lisätään tähän kun ne ovat tiedossa!</p>
+				<p>	Hinta on 100 € ja maksetaan kurssin alussa ravintolaan.</p>
+				<p>	Kurssin jälkeen sovitaan Green Card -suorituksen aikataulu. Kokeen hinta on 35 € kurssilaisilta ja muilta 50 €. 
+					Maksu kokeesta suoritetaan suoraan golfopettajalle. Green Card -koe koostuu ennakkotehtävästä (säännöt, etiketti) 
+					sekä yhteisestä 2–3 reiän pelistä yhdessä ryhmäläisten ja golfopettajan kanssa. Lopuksi on yhteenvetokeskustelu 
+					ja ennakkotehtävän tarkistus. Kesto noin 1–2 tuntia riippuen osallistujamäärästä.</p>
+				<p style="font-weight:700;"> Keväällä järjestetään myös erillinen alkeiskurssi, joka alkaa jo <span style="color:red;">maaliskuussa</span> hallilla ja greencard-suoritus 
+					Siikajoella myöhemmin keväällä. Tästä tietoa tarkemmin lähempänä. Kysy paikkaa ryhmään itsellesi tai kaverillesi suoraan prolta.</p>
+				<p>	Mahdollisuus myös järjestää alkeiskurssi omalle ryhmälle tai yksityisopetuksena (kysy lisää J-P Savolampi, p. 046 810 6888 tai
+					savolampi@gmail.com).
+				</p>
+
+				</div>
+				<div class="col-md-5">
+					<div class="imgWrapRotate">
+						<img class="img-responsive" src="img/kuvitus_1.jpg"/ style="box-shadow: 10px 10px 5px #888888; -webkit-transform: rotate(2deg); -ms-transform: rotate(2deg); transform: rotate(2deg);">
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+<!-- /ALKEISKURSSIT -->		
+		
+<!-- ALOITTELIJAN POLKU -->	
+			<div id="productWrap" class="altWrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="sectionTitle">Aloittelijan polku</h2></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-md-offset-1">
+					<div class="imgWrap">
+						<img class="img-responsive" src="img/aloittelijanpolku.png">
+					</div>
+
+				</div>
+				<div class="col-md-5">
+				<p><span style="font-weight:700;">1. Alkeiskurssi</span> 3 krt, maanantai, tiistai ja keskiviikko klo 17.30–20.00. 
+				Kurssi antaa edellytykset aloittaa golfharrastus ja suorittaa Green Card. Seuran puolesta annetaan välineet, opetus ja aloituskahvit. </p>
+				<p>	Hinta: 100 €/hlö tai pelioikeuspaketti 500 €. Kts. Kohta 4. </p>
+				<p><span style="font-weight:700;">	2. Alkeiskurssin jälkeen</span> on hyvä hieman itsenäisesti harjoitella ja käydä pelaamassa ns. kipinäkierros 
+				(9 reiän harjoittelukierros seuran jäsenen kanssa). Sovi aika tai ilmoittaudu ennakolta sovittuun Green Card -kokeeseen.</p>
+				<p><span style="font-weight:700;">	3. Green Card -kokeen suoritus:</span> Käydään pelaamassa 2–3 väylää, keskustellaan pelaamisesta ja lopuksi 
+				tarkastetaan ennaltatäytetyt sääntökysymykset. Kesto noin 1–2 h, riippuen ryhmän koosta. Hinta: 35 €/hlö RTG-kurssilaisilta ja muut 50 €/hlö. </p>
+				<p><span style="font-weight:700;">4. Ei kun pelaamaan! Miten?</span> Raahentienoon Golf tarjoaa aloituspaketin yhteensä 500 €.</p>
+				<ul class="fa-ul">
+				<li><i class="fa-li fa fa-check"></i><p>Alkeiskurssi 100 €</p></li>
+				<li><i class="fa-li fa fa-check"></i><p>Jäsenmaksu, sis. vakuutuksen ja Golfliiton Golf-lehden vuosikerran 95 €.</p></li>
+				<li><i class="fa-li fa fa-check"></i><p>Kauden pelioikeus, pelaa niin paljon kun haluat 305 €.</p></li>
+				</ul>	
+				<p>Yhteensä siis 500 €. Monissa seuroissa pelkästään pelioikeus maksaa 700–850 €/kausi.</p>
+				<p><span style="font-weight:700;color:red;">Aloituspaketin säästö ensimmäisenä vuonna 395–545 €.</span></p>
+				<p><span style="font-weight:700;">5. Jatkokurssit ja yksityisopetus: </span> Seuran Pro J-P Savolampi tarjoaa kesän aikana ryhmäopetusta sekä 
+				yksitystunteja. Seuraa seuran nettisivuilta tai ole suoraan yhteydessä [Ari Koski, p. 0400 684 929, ari.koski@outlook.com.]
+				</p>
+				</div>
+			</div>
+		</div>
+		</div>
+<!-- /ALOITTELIJAN POLKU -->	
+	
+<!-- GOLFIN VAIKUTUKSET -->		
+	<div id="productWrap" >
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="sectionTitle">Miksi minä pelaisin golfia?</h2></p>
 					<h3 class="sectionTitle">Golf on hyvä liikuntamuoto fyysiselle ja henkiselle hyvinvoinnille. Golffari elää viisi vuotta pidempään!</h3>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-5 col-md-offset-1">
 					<div class="imgWrap">
-						<img class="img-responsive" src="assets/img/tablet.jpg"/>
+						<img class="img-responsive" src="assets/img/tablet.jpg"/  style="box-shadow: 10px 10px 5px #888888;">
 					</div>
 				</div>
 				<div class="col-md-5">
@@ -222,9 +295,11 @@
 				</div>
 			</div>
 		</div>
-	</div> <!-- /productWrap -->
-	
-	<div id="pricingWrap"  class="altWrap">
+	</div> 
+<!-- /GOLFIN VAIKUTUKSET -->		
+
+<!-- TAULUKKO -->			
+	<div id="pricingWrap" class="altWrap">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -282,10 +357,11 @@
 				</div>
 			</div>
 		</div>
-	</div> <!-- /pricingWrap -->
+	</div> 
+<!-- /TAULUKKO -->	
 	
  
-	
+<!-- YHTEYSTIEDOT -->
 	<div id="contactWrap">
 		<div class="overlay">
 			<div class="container">
@@ -298,7 +374,7 @@
 				<div class="row">
 					<div class="col-xs-12 text-center">
 						<div class="blurb">
-						Lähetä viesti, vastaamme jos jaksamme!
+						Lähetä viesti, vastaamme mahdollisimman pian!
 						</div>
 					</div>
 				</div>
@@ -323,14 +399,12 @@
 						</div>
 						<div class="col-sm-8 col-sm-offset-2">
 							<button name="submit" type="button" class="btn btn-primary btn-lg">LÄHETÄ</button>
-						</div>
-	
+						</div>	
 					</div>
 			</div>
-		</div>
-		
-		
-	</div> <!-- /contactWrap -->
+		</div>		
+	</div> <
+<!-- /YHTEYSTIEDOT -->	
 	
 	<footer>
 	<div class="mapwrap">
@@ -338,7 +412,7 @@
 			<div class="row">
 				<div class="col-xs-12 text-center">
 									<iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18130.843860638968!2d24.71304972309854!3d64.81481961890094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x93586eb67d153486!2sRaahentienoon+Golf!5e0!3m2!1sen!2sfi!4v1486665367251" width="800" height="600" frameborder="0" style="border:0"></iframe>
-					<p>Copyright &copy; 2017 RTG.</p>
+					<p>Copyright &copy; 2017 RTG</p>
 
 				</div>
 			</div>
