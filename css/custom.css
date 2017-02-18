@@ -898,7 +898,7 @@ footer .contactInfo p{
 #teamWrap .team_img h7 { 
    position: absolute; 
    top: -10px; 
-   left: -95px; 
+   left: -98px; 
    width: 100%; 
    color: #0094AA;
    font-size: 80px;
@@ -921,11 +921,11 @@ footer .contactInfo p{
    line-height: 26px;
    text-shadow: 1px 1px #ddd;
 }
-#teamWrap .h7double { 
-	left:  -90px;   
+#teamWrap .team_img .h7double { 
+	left:  -85px;   
 }
-#teamWrap .h8double { 
-	left: 100px; 
+#teamWrap .team_img .h8double { 
+	left: 105px; 
 }
 
 
