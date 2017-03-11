@@ -999,6 +999,184 @@ footer .contactInfo p{
 	/*font-weight: bold;*/
 }
 
+/*--------------------*//*--------------------*/
+/*--------------------*//*--------------------*/
+/*--------------- HOLE SECTION ---------------*/
+/*--------------------*//*--------------------*/
+/*--------------------*//*--------------------*/
+#courseWrap{
+	float: left;
+	display: inline;
+	width: 100%;
+	padding: 60px 15px;
+
+	background: none repeat scroll 0 0 #fff;
+			border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+#courseWrap .team_area{
+	
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#courseWrap .team_slider{
+	float: left;
+	display: inline;
+	width: 100%;
+
+}
+#courseWrap .team_slider .slick-next, .team_slider .slick-prev{
+  height: 80px;
+  top: 43%;
+  background-color: #0094AA;
+}
+#courseWrap .team_slider .slick-next{
+	right: -10px;
+}
+#courseWrap .team_slider .slick-prev{
+	left: -10px;
+}
+#courseWrap .single_hole {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: inline;
+  float: left;
+  padding: 5px 15px;
+  text-align: center;
+  width: 100%; 
+  min-height: 400px;
+  margin: 0 5px;
+ /*  min-width: 220px;
+ height: 660px;*/
+}
+#courseWrap .hole_data{
+	float: left;
+	display: block;
+	width: 100%;
+	height: 80px;
+
+}
+#courseWrap .hole_data h7 {
+	text-align: left;
+   position: absolute; 
+   top: -10px; 
+   left: 35px; 
+   width: 100%; 
+   color: #0094AA;
+   font-size: 80px;
+   font-weight: bold;
+   letter-spacing: -10px;
+   text-shadow: 3px 3px #ddd;
+}
+#courseWrap .hole_data h8 { 
+   position: absolute;
+	text-align: left;   
+   float: left;
+	display: inline;
+   top: 25px; 
+   left: 110px; 
+   width: 100%; 
+   color: #0094AA;
+   font-size: 24px;
+   font-weight: normal;
+   letter-spacing: -1.5px;
+   line-height: 26px;
+   text-shadow: 1px 1px #ddd;
+}
+#courseWrap .hole_data .h7double { 
+	left:  -85px;   
+}
+#courseWrap .hole_data .h8double { 
+	left: 135px; 
+}
+
+
+#courseWrap .hole_img {
+  /*border-radius: 100%;*/
+  padding-top: 20px;	
+  margin: 10px auto;
+  width: 100%;
+
+
+ /* width: 220px;*/
+}
+#courseWrap .hole_img img{
+  max-height: 366px;
+    max-width: 400px;
+	margin: 0 auto;
+}
+#courseWrap .single_hole h5 {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 45px;
+
+  text-transform: uppercase;
+  font-size: 22px;
+}
+#courseWrap .single_hole span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #0094AA;
+}
+#courseWrap .single_hole p {
+  line-height: 20px;
+  text-align: justify;
+  padding: 5px 10px;
+}
+#courseWrap .team_social{
+	float: left;
+	display: inline;
+	width: 100%;
+	margin-top: 10px;
+}
+#courseWrap .team_social a {
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  background: #ccc;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#courseWrap .hole_meters {
+    border-collapse: collapse;
+    width: 50%;
+	min-width: 210px;
+	float: right;
+	margin: 27px 25px 0 20px;	
+	padding-bottom: 15px;
+	display: block;
+	line-height: 16px;
+	font-size: 16px;
+}
+#courseWrap .hole_meters th, td {
+	width: 12%;
+	padding: 4px;
+    text-align: center;
+    border-top: 1px solid #eee;	
+}
+#courseWrap .hole_meters th {
+	color: #2da2c8;
+	background: #fff;
+}
+#courseWrap .hole_meters td {
+	color: #555;
+	background: #eee;
+	/*font-weight: bold;*/
+}
+
+
 
 /**********************************************************************/
 /****************** MEDIA QUERIES ************************************/
@@ -1056,6 +1234,12 @@ footer .contactInfo p{
 	#blogWrap .blog_slider .slick-prev {
     left: 90	%;
 	}
+	#courseWrap .team_area{
+	max-width: 740px;
+	}
+	#courseWrap .hole_meters{
+	width: 100%;
+	margin-right:0;
 }
 @media(max-width:979px){
 	.navbar-collapse {
@@ -1165,7 +1349,12 @@ footer .contactInfo p{
 		#blogWrap .blog_slider .slick-prev {
     left: 80%;
 	}
-
+#courseWrap .single_hole p {
+  line-height: 16px;
+  font-size: 14px;
+  text-align: justify;
+  padding: 5px 10px;
+}
 }
 
 @media(max-width:380px){
