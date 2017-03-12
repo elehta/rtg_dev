@@ -790,10 +790,15 @@ hr.styled {
 /**********************************************************************/
 /************************* FOOTER ************************************/
 /********************************************************************/
+#contactWrap {
+	padding: 0;
+}
+
 footer {
 	background: #444;
 	padding: 20px 0;
 	display: block;
+
 }
 footer p {
 	color: #ddd;
@@ -1193,13 +1198,18 @@ footer .contactInfo p{
 	.navbar-nav img{
 	height: 0px;
 	width: 0px;
+
+	}
+	.navbar-nav{
+
+	
 	}
 	
 	.navbar > .container .navbar-brand,
 	.navbar > .container-fluid .navbar-brand {
 		font-size: 28px;
 		float: left;
-		margin: 15px 0;
+		
 		width: auto;	
 	}
 	.navbar-inverse .navbar-brand .fa-stack {
@@ -1207,7 +1217,7 @@ footer .contactInfo p{
 	}
 	.navbar-header.smaller img{
 	 margin-left: 0px;
-	 margin-top: -26px;
+	 margin-top: 5px;
 	 width: 27px; 
      height: 58px;
 	-webkit-transition: all 0.3s;
@@ -1219,9 +1229,9 @@ footer .contactInfo p{
   .navbar-brand.smaller {
 	line-height: 1;
     height: 16px;
-    margin-top: 4px;
+    margin-top: -5px;
     margin-bottom: 12px;
-    padding: 0 0 0 -50px;
+    padding: 5px 0 0 10px;
     width: 100%;
 	font-size: 28px;
 	overflow: visible;
@@ -1231,6 +1241,8 @@ footer .contactInfo p{
     -o-transition: all 0.3s;
     transition: all 0.3s; 
 	}
+
+	
 	#blogWrap .blog_slider .slick-prev {
     left: 90	%;
 	}
@@ -1252,6 +1264,7 @@ footer .contactInfo p{
 		margin: 15px 0;
 		width: auto;	
 	}
+
 
 	.navbar-inverse .navbar-nav > li > a {
 		font-size: 14px;
@@ -1368,7 +1381,7 @@ footer .contactInfo p{
 
 	
 	h2.sectionTitle {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 40px;
 	border-bottom: 8px solid #2da2c8;
 	}
@@ -1376,5 +1389,17 @@ footer .contactInfo p{
 	#blogWrap .blog_slider .slick-prev {
     left: 75%;
 	}
+	
+	#courseWrap .hole_meters {
+
+	padding-bottom: 5px;
+
+	}
+	#courseWrap .single_hole h5 {
+    margin-top: 15px;
+	}
+	#courseWrap .hole_data {
+    height: 70px;
+}
 }
 
